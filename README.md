@@ -8,7 +8,8 @@ Above is image of labelImg studio
 We have added a very 'small' Coco sample imageset in the folder called smalcoco. 
 This is to make sure you can run it without issues on Colab.
 
-### The code has been taken from [this](https://github.com/ultralytics/yolov3) and more details can be found
+## Code test with Coco dataset
+- The code has been taken from [this](https://github.com/ultralytics/yolov3) and more details can be found
 
 We need to download the weights from the original source. 
 - Create a folder called weights in the root (YoloV3) folder
@@ -18,8 +19,8 @@ We need to download the weights from the original source.
 `python train.py --data data/smalcoco/smalcoco.data --batch 10 --cache --epochs 25 --nosave`
 
 ## Data download from Kaggle
-`kaggle_import.py` - This script will be used download the dataset from kaggle. This script requires setting user_id and token_id in form of environment variable
-`resize-image.py` - This script will be resize the image in 416*416 and save in different directory.
+`preprocess/kaggle_import.py` - This script will be used download the dataset from kaggle. This script requires setting user_id and token_id in form of environment variable
+`preprocess/resize-image.py` - This script will be resize the image in 416*416 and save in different directory.
 
 ## For custom dataset:
 - Clone this repo: https://github.com/miki998/YoloV3_Annotation_Tool
